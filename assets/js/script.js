@@ -2,7 +2,7 @@ $(function () {
 // Navigation 
     $('.site-navigation').affix({
       offset: {
-        top: $('.hero').height()
+        top: $('.orla').height()
             }
     });
 

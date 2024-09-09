@@ -279,7 +279,7 @@ html, body {
   position: relative;
   padding: 0 30px 0 15px;
   height: 60px;
-  background-color: #004b91;
+  background-color: #fff7d9;
   z-index: 2;
 }
 
@@ -290,7 +290,7 @@ html, body {
   height: 100%;
   top: 0;
   right: 0;
-  background-color: #004b91;
+  background-color: #fff7d9;
 }
 
 .site-logo a {
@@ -300,13 +300,13 @@ html, body {
   margin-top: 17px;
   font-size: 26px;
   line-height: 26px;
-  color: #ffffff;
+  color: #000000;
   text-transform: uppercase;
 }
 
 /* Navigation */
 .site-navigation {
-  background-color: #196fc2;
+  background-color: #000000;
 }
 
 .site-navigation.affix {
@@ -403,7 +403,7 @@ html, body {
   }
   .site-navigation .navbar-collapse {
     position: relative;
-    background-color: #196fc0;
+    background-color: #000000;
     z-index: 99;
     text-align: center;
     border-top: 0;
@@ -422,10 +422,10 @@ html, body {
   }
 }
 
-/* HERO
+/* ORLa
 ================================================== */
-.hero {
-  background: url(../img/hero.jpg) center no-repeat;
+.orla {
+  background: url(../img/orla_irene.jpg) center no-repeat;
   height: 100%;
   width: 100%;
   display: table;
@@ -444,14 +444,14 @@ html, body {
   z-index: 0;
 }
 
-.hero-content {
+.orla-content {
   color: #ffffff;
   display: table-cell;
   vertical-align: middle;
   position: relative;
 }
 
-.hero-content h1 {
+.orla-content h1 {
   width: 100%;
   padding: 0 15px;
   font-size: 40px;
@@ -461,28 +461,28 @@ html, body {
   text-transform: uppercase;
 }
 
-.hero-content p {
+.orla-content p {
   padding: 0 15px;
   margin: 30px auto 0;
   text-align: center;
   text-transform: uppercase;
 }
 
-.hero-content .hero-job {
+.orla-content .orla-job {
   font-size: 18px;
 }
 
-.hero-content .hero-job span {
+.orla-content .orla-job span {
   padding-bottom: 5px;
   border-bottom: 1px solid #ffffff;
 }
 
-.hero-content .hero-job-desc {
+.orla-content .orla-job-desc {
   font-size: 14px;
   max-width: 700px;
 }
 
-.hero-arrow {
+.orla-arrow {
   position: absolute;
   left: 0;
   right: 0;
@@ -492,7 +492,7 @@ html, body {
   text-align: center;
 }
 
-.hero-arrow a {
+.orla-arrow a {
   font-size: 28px;
   color: #ffffff;
 }
@@ -579,10 +579,10 @@ html, body {
 @media only screen and (max-width: 767px) {
   /* HEADER */
   /* HERO */
-  .hero-content h1 {
+  .orla-content h1 {
     font-size: 32px;
   }
-  .hero-content p {
+  .orla-content p {
     margin: 20px auto 0;
   }
 }
@@ -2335,7 +2335,7 @@ textarea.form-control {
   top: -20px;
   height: 40px;
   width: 40px;
-  background-color: #196fc2;
+  background-color: hsl(0, 0%, 0%);
   color: #ffffff;
   box-shadow: none;
   border: 0;
@@ -2344,8 +2344,8 @@ textarea.form-control {
 
 .modal-header .rectangle:hover {
   background-color: #ffffff;
-  color: #196fc2;
-  border-color: #196fc2;
+  color: #fff7d9;
+  border-color: #000000;
 }
 
 .modal-header,
@@ -2359,7 +2359,7 @@ textarea.form-control {
 
 .modal-footer .btn:hover {
   background-color: #ffffff;
-  color: #196fc2;
+  color: #000000;
   border-color: #196fc2;
 }
 
