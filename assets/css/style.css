@@ -791,8 +791,12 @@ html, body {
 }
 
 /* Section: About */
+
 .section-about .row {
   margin-top: 70px;
+}
+.about_photo{
+ align-items: end;
 }
 
 .section-about .col-sm-3 {
