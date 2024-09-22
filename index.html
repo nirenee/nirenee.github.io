@@ -35,33 +35,25 @@
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/responsive.css" rel="stylesheet">
 
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </head>
 <body>
 
-    
-  
-
-  
-
-     <!-- La orl -->
-     <div id="top" class="orla background-overlay">
-    
-        <div class="orla-content">
-            <h1>Irene Onsurbe Casado</h1>
-            <p class="orla-job"><span>MULTIMEDIA ENGINEER</span></p>
-            <p class="orla-job-desc"> CREATIVE &amp; PASSIONATE </p>
-
-        </div>
-
-        <div class="orla-arrow page-scroll home-arrow-down">
-            <a class="" href="#about"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-        </div><!-- /-arrow -->
-    </div>
 
 
-   
     <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);" data-top-bottom="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
         <nav id="primary-navigation" class="site-navigation">
             <div class="container">
@@ -94,9 +86,25 @@
             </div>
         </nav><!-- /.primary-navigation -->
     </header><!-- /#header -->
-    <!-- end of the section of banner-->
 
 
+
+
+
+  <!-- La orl -->
+  <div id="top" class="orla background-overlay">
+    
+    <div class="orla-content">
+        <h1>Irene Onsurbe Casado</h1>
+        <p class="orla-job"><span>MULTIMEDIA ENGINEER</span></p>
+        <p class="orla-job-desc"> CREATIVE &amp; PASSIONATE </p>
+
+    </div>
+
+   <!-- <div class="orla-arrow page-scroll home-arrow-down">
+        <a class="" href="#about"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+    </div> /-arrow -->
+</div>
 
 
     
@@ -107,16 +115,143 @@
                     <h2>About Me</h2>
                     <img src="assets/img/lines.svg" class="img-lines" alt="lines">
                     <p>I am Irene Onsurbe Casado, a Multimedia Engineering professional with a diverse skill set in programming, game development, design, and web services. My programming experience includes C/C++, Java, HTML, CSS, JavaScript, SQL, and PHP. I've developed a VR demo in Unreal Engine and contributed to projects like Watch Out!!! (2D game) and Relic Raider (3D game). Additionally, I have experience in 3D modeling with 3ds Max and Blender, and I managed a mobile app development project during my internship. I’m excited to explore various opportunities in multimedia and game development.</p>
-                   <a href="assets/files/cv-Irene_Onsurbe.pdf" class="btn btn-fill" target="_blank" download="cv.pdf">Download my cv</a>
+                    <a href="assets/files/cv-Irene_Onsurbe.pdf" class="btn btn-fill" target="_blank" download="cv.pdf">Download my cv</a>
+                    <a href="mailto:ireonsca@gmail.com"  class="btn btn-fill" target="_blank">send an email</a>
                 </div>
             </div>
         </div>
     </section><!-- /.secton-about -->
 
 
+    <section class="site-section section-skills">
+        <div class="container">
+            <div class="text-center">
+                <h3>My Skills</h3>
+                <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="skill">
+                        <h4>Html/css</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="100"></div><!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+                    <div class="skill">
+                        <h4>Python</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="75"></div><!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+                </div>
+                <div class="col-md-4">
+                    <div class="skill">
+                        <h4>Javascript</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="82"></div><!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+                    <div class="skill">
+                        <h4>Ruby</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="66"></div><!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+                </div>
+                <div class="col-md-4">
+                    <div class="skill">
+                        <h4>Php</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="97"></div><!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+                    <div class="skill">
+                        <h4>Java</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="45"></div><!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+                </div>
+            </div>
+        </div>
+    </section><!-- /.secton-skills -->
 
 
+    
+    <section id="portfolio" class="site-section section-portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h3>My recent Works</h3>
+                <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-6">
+                    <div class="portfolio-item">
+                        <img src="assets/img/portfolio-1.jpg" class="img-res" alt="">
+                        <div class="portfolio-item-info">
+                            <h4>Project Title</h4>
+                            <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                        </div><!-- /.portfolio-item-info -->
+                    </div><!-- /.portfolio-item -->
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="portfolio-item">
+                        <img src="assets/img/portfolio-2.jpg" class="img-res" alt="">
+                        <div class="portfolio-item-info">
+                            <h4>Project Title</h4>
+                            <a href="#" data-toggle="modal" data-target="#portfolioItem2"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                        </div><!-- /.portfolio-item-info -->
+                    </div><!-- /.portfolio-item -->
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="portfolio-item">
+                        <img src="assets/img/portfolio-3.jpg" class="img-res" alt="">
+                        <div class="portfolio-item-info">
+                            <h4>Project Title</h4>
+                            <a href="#" data-toggle="modal" data-target="#portfolioItem3"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                        </div><!-- /.portfolio-item-info -->
+                    </div><!-- /.portfolio-item -->
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="portfolio-item">
+                        <img src="assets/img/portfolio-4.jpg" class="img-res" alt="">
+                        <div class="portfolio-item-info">
+                            <h4>Project Title</h4>
+                            <a href="#" data-toggle="modal" data-target="#portfolioItem4"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                        </div><!-- /.portfolio-item-info -->
+                    </div><!-- /.portfolio-item -->
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="portfolio-item">
+                        <img src="assets/img/portfolio-5.jpg" class="img-res" alt="">
+                        <div class="portfolio-item-info">
+                            <h4>Project Title</h4>
+                            <a href="#" data-toggle="modal" data-target="#portfolioItem5"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                        </div><!-- /.portfolio-item-info -->
+                    </div><!-- /.portfolio-item -->
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="portfolio-item">
+                        <img src="assets/img/portfolio-6.jpg" class="img-res" alt="">
+                        <div class="portfolio-item-info">
+                            <h4>Project Title</h4>
+                            <a href="#" data-toggle="modal" data-target="#portfolioItem6"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+                        </div><!-- /.portfolio-item-info -->
+                    </div><!-- /.portfolio-item -->
+                </div>
+            </div>
+        </div>
+    </section><!-- /.secton-portfolio -->
 
+<footer>
+
+</footer>
 
 </body>
 </html>
