@@ -177,7 +177,7 @@
 	.navbar-toggle .icon-bar {
 		height: 1px;
 		width: 30px;
-	    background-color: #212121;
+	    background-color: #ffffff;
 	    -webkit-transition: all 0.3s;
 	    -moz-transition: all 0.3s;
 	    -ms-transition: all 0.3s;
@@ -298,7 +298,7 @@
 	}
 
 	.hero h1 {
-		font-size: 32px
+		font-size: 32px;
 		margin-bottom: 10px;
 	}
 
