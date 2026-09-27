@@ -54,7 +54,7 @@
 
 
 
-    <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);" data-top-bottom="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
+    <header id="masthead" class="site-header">
         <nav id="primary-navigation" class="site-navigation">
             <div class="container">
                 <div class="navbar-header page-scroll">
@@ -65,7 +65,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     
-                    <a href="#hero" class="site-logo"><img src="assets/img/logo.png" alt="logo"></a>
+                    <a href="#orla" class="site-logo"><img src="assets/img/logo.png" alt="logo"></a>
 
                 </div><!-- /.navbar-header -->
 
@@ -75,8 +75,8 @@
 
                         <li class="page-scroll"><a href="#orla">Home</a></li>
                         <li class="page-scroll"><a href="#about">About</a></li>
-                        <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
                         <li class="page-scroll"><a href="#work">Professional experience</a></li>
+                        <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
                         <li class="page-scroll"><a href="#contact">Contact</a></li>
                         
                         
@@ -86,6 +86,7 @@
 
             </div>
         </nav><!-- /.primary-navigation -->
+        <div class="nav-progress" aria-hidden="true"></div>
     </header><!-- /#header -->
 
 
@@ -111,13 +112,21 @@
     <section id="about" class="site-section section-about text-center">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3">
+                <div class="col-md-10 col-md-offset-1">
                     <h2>About Me</h2>
                     <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                </div>
+            </div>
+            <div class="row about-text">
+                <div class="col-md-8 col-md-offset-2">
                     <p>I'm Irene Onsurbe Casado, a Multimedia Engineer specialised in XR and game development with Unity, C#, Unreal Engine and C++.</p>
                     <p>I worked as a <strong>Gameplay Programmer (XR) at Hologate</strong> on multiplayer VR training simulations, and took part in the <strong>Develop at Ubisoft Mentorship Program</strong>, developing the roguelike <em>Invoid</em> in Unity. I've also worked at Niomake (facial animation engineer) and TinyFeetGames (sound design and engineer on <em>Uprising: Humanum</em>).</p>
                     <p>I love building immersive experiences and solving complex technical problems as part of a team.</p>
                     <p>I'm used working in international environments. I've studied in Milan, and worked in Lübeck and in Munich, and I truly value the perspectives that diverse teams bring.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
                     <a href="assets/files/CV_Irene_Onsurbe.pdf" class="btn btn-fill" target="_blank" download="cv.pdf">Download my cv</a>
                     <a href="mailto:ireonsca@gmail.com"  class="btn btn-fill" target="_blank">send an email</a>
                 </div>
@@ -147,9 +156,9 @@
                     </div>
                     <ul class="skill-list">
                         <li class="skill" data-years="2.5" data-projects="3"><span class="skill-name">Unity / C#</span></li>
-                        <li class="skill" data-years="4" data-projects="6"><span class="skill-name">Unreal Engine</span></li>
-                        <li class="skill" data-years="5" data-projects="8"><span class="skill-name">C / C++</span></li>
-                        <li class="skill" data-years="3" data-projects="5"><span class="skill-name">Blueprints</span></li>
+                        <li class="skill" data-years="1" data-projects="2"><span class="skill-name">Unreal Engine</span></li>
+                        <li class="skill" data-years="2" data-projects="3"><span class="skill-name">C / C++</span></li>
+                        <li class="skill" data-years="1" data-projects="2"><span class="skill-name">Blueprints</span></li>
                 
                     </ul>
                 </div>
@@ -160,12 +169,11 @@
                         <h4>Frameworks &amp; Gameplay</h4>
                     </div>
                     <ul class="skill-list">
-                        <li class="skill" data-years="3" data-projects="6"><span class="skill-name">XR / OpenXR</span></li>
-                        <li class="skill" data-years="2" data-projects="3"><span class="skill-name">Multiplayer / Netcode</span></li>
-                        <li class="skill" data-years="3" data-projects="6"><span class="skill-name">Gameplay &amp; Combat</span></li>
-                        <li class="skill" data-years="2" data-projects="4"><span class="skill-name">AI / Behaviour Trees</span></li>
-                        <li class="skill" data-years="2" data-projects="2"><span class="skill-name">Procedural Gen</span></li>
-                        <li class="skill" data-years="1" data-projects="2"><span class="skill-name">Facial Animation</span></li>
+                        <li class="skill" data-years="2" data-projects="3"><span class="skill-name">XR / OpenXR</span></li>
+                        <li class="skill" data-years="1" data-projects="1"><span class="skill-name">Multiplayer / Netcode</span></li>
+                        <li class="skill" data-years="2" data-projects="2"><span class="skill-name">Gameplay &amp; Combat</span></li>
+                        <li class="skill" data-years="2" data-projects="3"><span class="skill-name">AI / Behaviour Trees</span></li>
+                        <li class="skill" data-years="1" data-projects="1"><span class="skill-name">Procedural Gen</span></li>
                     </ul>
                 </div>
 
@@ -175,12 +183,10 @@
                         <h4>Tools &amp; Workflow</h4>
                     </div>
                     <ul class="skill-list">
-                        <li class="skill" data-years="5" data-projects="15"><span class="skill-name">Git / Perforce</span></li>
-                        <li class="skill" data-years="3" data-projects="8"><span class="skill-name">Jira / Agile</span></li>
-                        <li class="skill" data-years="2" data-projects="4"><span class="skill-name">FMOD / MetaSounds</span></li>
-                        <li class="skill" data-years="4" data-projects="6"><span class="skill-name">Blender / 3ds Max</span></li>
-                        <li class="skill" data-years="1" data-projects="2"><span class="skill-name">Audio2Face</span></li>
-                        <li class="skill" data-years="4" data-projects="10"><span class="skill-name">Graphic Design</span></li>
+                        <li class="skill" data-years="4" data-projects="3"><span class="skill-name">Git / Perforce</span></li>
+                        <li class="skill" data-years="2" data-projects="1"><span class="skill-name">Jira / Agile</span></li>
+                        <li class="skill" data-years="1" data-projects="2"><span class="skill-name">Blender / 3ds Max</span></li>
+                        <li class="skill" data-years="4" data-projects="1"><span class="skill-name">Graphic Design</span></li>
                     </ul>
                 </div>
 
@@ -192,6 +198,87 @@
     
 
 
+    <section id="work" class="site-section section-work">
+        <div class="container">
+            <div class="text-center">
+                <h3>Professional Experience</h3>
+                <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+            </div>
+
+            
+            <ol class="timeline">
+                <li class="timeline-progress" aria-hidden="true"></li>
+
+                <li class="timeline-item">
+                    <div class="timeline-card">
+                        <div class="timeline-img">
+                            <img src="./assets/img/Hologate.jpg.webp" alt="Hologate" onerror="this.parentNode.remove()">
+                        </div>
+                        <div class="timeline-body">
+                            <span class="timeline-date">2026 – 2026</span>
+                            <h4>Gameplay Programmer (XR)</h4>
+                            <p class="timeline-company">Hologate</p>
+                            <ul>
+                                <li>Developed multiplayer VR training simulations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="timeline-item">
+                    <div class="timeline-card">
+                        <div class="timeline-img">
+                            <img src="./assets/img/Developatubisoft.jpg" alt="Invoid" onerror="this.parentNode.remove()">
+                        </div>
+                        <div class="timeline-body">
+                            <span class="timeline-date">2025 – 2026</span>
+                            <h4>Game Developer · Mentorship Program</h4>
+                            <p class="timeline-company">Develop at Ubisoft</p>
+                            <ul>
+                                <li>Developed the roguelike <em>Invoid</em> in Unity.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="timeline-item">
+                    <div class="timeline-card">
+                        <div class="timeline-img">
+                            <img src="./assets/img/Portfolio-8.png" alt="Niomake" onerror="this.parentNode.remove()">
+                        </div>
+                        <div class="timeline-body">
+                            <span class="timeline-date">2024 – 2024</span>
+                            <h4>Facial Animation Engineer</h4>
+                            <p class="timeline-company"><a href="https://niomake.com/" target="_blank">Niomake</a></p>
+                            <ul>
+                                <li>Facial animation and lip-sync with audio, implemented in Unity.</li>
+                                <li>Application that converts PDFs into interactive presentations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="timeline-item">
+                    <div class="timeline-card">
+                        <div class="timeline-img">
+                            <img src="./assets/img/Portfolio-1.jpg" alt="Uprising: Humanum" onerror="this.parentNode.remove()">
+                        </div>
+                        <div class="timeline-body">
+                            <span class="timeline-date">2024 – 2024</span>
+                            <h4>Sound Designer &amp; Engineer</h4>
+                            <p class="timeline-company">TinyFeetGames · <a href="https://store.steampowered.com/app/2388250/Uprising_Humanum/" target="_blank"><em>Uprising: Humanum</em></a></p>
+                            <ul>
+                                <li>Designed and implemented the sound system with MetaSounds in Unreal Engine.</li>
+                                <li>Programmed dynamic audio responses to in-game events.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section><!-- /.section-work -->
+
+
     <section id="portfolio" class="site-section section-portfolio">
         <div class="container">
             <div class="text-center">
@@ -201,22 +288,22 @@
             <div class="row">
                  <div class="col-md-4 col-xs-6">
                     <div class="portfolio-item">
-                        <img src="./assets/img/Portfolio-7.png" class="img-res" alt="">
+                        <img src="./assets/img/Invoid.png" class="img-res" alt="">
                         <div class="portfolio-item-info">
                             <h4>INVOID </h4>
-                            <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span class="glyphicon glyphicon-eye-open"></span></a>
-                            <a href="https://beesuk.itch.io/quiet"><span class="glyphicon glyphicon-link"></span></a>
+                            <a href="#" data-toggle="modal" data-target="#portfolioItem7"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            <a href="https://nirene.itch.io/invoid"><span class="glyphicon glyphicon-link"></span></a>
                         </div><!-- /.portfolio-item-info -->
                     </div><!-- /.portfolio-item -->
                 </div>
 
                  <div class="col-md-4 col-xs-6">
                     <div class="portfolio-item">
-                        <img src="./assets/img/Portfolio-7.png" class="img-res" alt="">
+                        <img src="./assets/img/Intoemotions.png" class="img-res" alt="">
                         <div class="portfolio-item-info">
                             <h4>INTOEMOTIONS </h4>
-                            <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span class="glyphicon glyphicon-eye-open"></span></a>
-                            <a href="https://beesuk.itch.io/quiet"><span class="glyphicon glyphicon-link"></span></a>
+                            <a href="#" data-toggle="modal" data-target="#portfolioItem8"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            <a href="https://www.youtube.com/watch?v=Buys_XAXRmk&t=1s"><span class="glyphicon glyphicon-link"></span></a>
                         </div><!-- /.portfolio-item-info -->
                     </div><!-- /.portfolio-item -->
                 </div>
@@ -286,68 +373,6 @@
     </section><!-- /.secton-portfolio -->
 
 
-       <section id="work" class="site-section section-portfolio">
-        <div class="container">
-             <div class="text-center">
-                <h3>Professional Experience</h3>
-                <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-
-                   <div class="row">
-                <div class="col-md-4 col-xs-6">
-                    <div class="portfolio-item">
-                        <img src="./assets/img/Portfolio-1.jpg" class="img-res" alt="">
-                        <div class="portfolio-item-info">
-                            <h4>HOLOGATE</h4>
-                            <a href="#" data-toggle="modal" data-target="#portfolioItem7"><span class="glyphicon glyphicon-eye-open"></span></a>
-                            <a href="https://store.steampowered.com/app/2388250/Uprising_Humanum/"><span class="glyphicon glyphicon-link"></span></a>
-                        </div><!-- /.portfolio-item-info -->
-                    </div><!-- /.portfolio-item -->
-                </div>
-
-                   <div class="row">
-                <div class="col-md-4 col-xs-6">
-                    <div class="portfolio-item">
-                        <img src="./assets/img/Portfolio-1.jpg" class="img-res" alt="">
-                        <div class="portfolio-item-info">
-                            <h4>DEVELOP AT UBISOFT PROGRAM</h4>
-                            <a href="#" data-toggle="modal" data-target="#portfolioItem7"><span class="glyphicon glyphicon-eye-open"></span></a>
-                            <a href="https://store.steampowered.com/app/2388250/Uprising_Humanum/"><span class="glyphicon glyphicon-link"></span></a>
-                        </div><!-- /.portfolio-item-info -->
-                    </div><!-- /.portfolio-item -->
-                </div>
-
-                <div class="row">
-                <div class="col-md-4 col-xs-6">
-                    <div class="portfolio-item">
-                        <img src="./assets/img/Portfolio-1.jpg" class="img-res" alt="">
-                        <div class="portfolio-item-info">
-                            <h4>Uprising:Humanum</h4>
-                            <a href="#" data-toggle="modal" data-target="#portfolioItem7"><span class="glyphicon glyphicon-eye-open"></span></a>
-                            <a href="https://store.steampowered.com/app/2388250/Uprising_Humanum/"><span class="glyphicon glyphicon-link"></span></a>
-                        </div><!-- /.portfolio-item-info -->
-                    </div><!-- /.portfolio-item -->
-                </div>
-                
-            
-
-
-                <div class="col-md-4 col-xs-6">
-                    <div class="portfolio-item">
-                        <img src="./assets/img/Portfolio-8.png" class="img-res" alt="">
-                        <div class="portfolio-item-info">
-                            <h4>Niomake</h4>
-                            <a href="#" data-toggle="modal" data-target="#portfolioItem8"><span class="glyphicon glyphicon-eye-open"></span></a>
-                            <a href="https://niomake.com/"><span class="glyphicon glyphicon-link"></span></a>
-                        </div><!-- /.portfolio-item-info -->
-                    </div><!-- /.portfolio-item -->
-                </div>
-                </div>
-            </div>
-
-        </div>
-
-
-       </section>
   
     <section id="contact" class="site-section section-contact">
         <div class="container">
@@ -385,6 +410,42 @@
 
 
     <!-- Modals -->
+    <div id="portfolioItem7" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+              <img class="img-res" src="./assets/img/Invoid.png" alt="">
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">INVOID</h4>
+              <p>Description of Invoid goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://nirene.itch.io/invoid" class="btn btn-fill">Visit Page</a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <div id="portfolioItem8" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+              <img class="img-res" src="./assets/img/Intoemotions.png" alt="">
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">INTOEMOTIONS</h4>
+              <p>Description of IntoEmotions goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.youtube.com/watch?v=Buys_XAXRmk&t=1s" class="btn btn-fill">Visit Page</a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
     <div id="portfolioItem1" class="modal fade" role="dialog">
         <div class="modal-dialog">
           <div class="modal-content">

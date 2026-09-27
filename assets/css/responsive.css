@@ -155,8 +155,9 @@
 		padding-left: 15px;
 	}
 
-	.site-logo img {
-		height: 22px;
+	.site-logo img,
+	.site-header.scrolled .site-logo img {
+		height: 32px;
 	}
 
 	/* Navigation */

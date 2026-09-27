@@ -166,12 +166,46 @@ html, body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: black;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     z-index: 5;
+    transition: padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Compact header once the page is scrolled (toggled in script.js) */
+.site-header.scrolled {
+    padding: 8px 0;
+    background-color: rgba(0, 0, 0, 0.92);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Reading progress along the bottom edge of the header */
+.nav-progress {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(242, 248, 200);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
 }
 
 .site-logo img {
-    padding-bottom: 2px;
+    display: block;
+    height: 44px;
+    width: auto;
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.site-header.scrolled .site-logo img {
+    height: 36px;
+}
+
+.site-logo:hover img {
+    transform: scale(1.08) rotate(-3deg);
 }
 
 /* Navigation */
@@ -179,15 +213,11 @@ html, body {
 .navbar-nav > li > a {
     padding: 5px 0;
     font-weight: 600;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
+    letter-spacing: 0.5px;
     border-bottom: 2px solid transparent;
-    transition: border-color 0.25s ease-in-out;
-    -moz-transition: border-color 0.25s ease-in-out;
-    -webkit-transition: border-color 0.25s ease-in-out;
-    -o-transition: border-color 0.25s ease-in-out;
-    -ms-transition: border-color 0.25s ease-in-out;
-    
+    transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
 }
 
 .navbar-nav.navbar-right {
@@ -199,17 +229,66 @@ html, body {
 }
 
 .navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
 .navbar-nav > li.active > a,
 .nav > li > a:hover,
+.nav > li > a:focus,
 .nav > li.active > a {
-    background-color: rgb(242, 248, 200);
-    color: #000000;
-    border-bottom: 2px solid #212121;
+    background-color: transparent;
+    color: #ffffff;
 }
 
-.nav > li > a:focus {
-    background-color: tan;
-    color: #000000;
+/* Desktop: a single line slides under the hovered / active link */
+@media (min-width: 768px) {
+    .navbar-nav {
+        position: relative;
+        margin-top: 5px; /* vertically centre the links next to the logo */
+        transition: margin-top 0.3s ease;
+    }
+
+    .site-header.scrolled .navbar-nav {
+        margin-top: 1px;
+    }
+
+    .navbar-nav > li > a:hover {
+        transform: translateY(-2px);
+    }
+
+    /* .navbar-nav > prefix beats Bootstrap's .nav > li / .navbar-nav > li (relative + float) */
+    .navbar-nav > .nav-indicator {
+        position: absolute;
+        float: none;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: rgb(242, 248, 200);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1), width 0.35s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.25s ease;
+    }
+}
+
+@media (max-width: 767px) {
+    /* backdrop-filter would make the fixed full-screen menu relative to the header */
+    .site-header {
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+        background-color: rgba(0, 0, 0, 0.92);
+    }
+
+    .nav-indicator {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-header,
+    .site-logo img,
+    .navbar-nav > li > a,
+    .nav-indicator {
+        transition: none;
+    }
 }
 
 /* orla
@@ -339,6 +418,12 @@ html, body {
 
 .site-section p {
     margin-bottom: 35px;
+}
+
+/* Section: About */
+.about-text {
+    text-align: justify;
+    hyphens: auto;
 }
 
 /* Section: Skills */
@@ -539,6 +624,179 @@ html, body {
 }
 
 /* Section: Portfolio */
+/* Section: Professional Experience (vertical timeline) */
+.section-work {
+    padding-bottom: 60px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 0 0 44px;
+    list-style: none;
+}
+
+/* the vertical line (grey track) */
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 7px;
+    width: 2px;
+    background-color: #e6e6e6;
+}
+
+/* the part of the line already scrolled past (height set in script.js) */
+.timeline-progress {
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width: 2px;
+    height: 0;
+    background-color: #212121;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 40px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item.in-view {
+    opacity: 1;
+    transform: none;
+}
+
+/* the dot on the line: fills in when the item appears */
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -44px;
+    width: 16px;
+    height: 16px;
+    border: 3px solid #212121;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: scale(0.4);
+    transition: background-color 0.3s ease 0.3s, transform 0.4s ease 0.2s;
+}
+
+.timeline-item.in-view:before {
+    background-color: #212121;
+    transform: scale(1);
+}
+
+.timeline-card {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-card:hover {
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.14);
+    transform: translateY(-3px);
+}
+
+.timeline-img {
+    flex: 0 0 38%;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.timeline-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.timeline-card:hover .timeline-img img {
+    transform: scale(1.06);
+}
+
+.timeline-body {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 20px 25px;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        padding-left: 32px;
+    }
+
+    .timeline-item:before {
+        left: -32px;
+    }
+
+    .timeline-card {
+        flex-direction: column;
+    }
+
+    .timeline-img {
+        flex-basis: auto;
+        height: 180px;
+        min-height: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .timeline-item,
+    .timeline-item:before,
+    .timeline-card,
+    .timeline-img img {
+        transition: none;
+    }
+}
+
+.timeline-date {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #757575;
+}
+
+.timeline-item h4 {
+    margin: 0 0 4px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.site-section .timeline-company {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.timeline-company a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.timeline-item ul {
+    margin: 0;
+    padding-left: 18px;
+    text-align: justify;
+}
+
+.timeline-item ul li {
+    margin-bottom: 6px;
+}
+
 .section-portfolio {
     padding-bottom: 120px;
 }
