@@ -904,6 +904,44 @@ html, body {
     margin-top: 10px;
 }
 
+/* Engine / language tag shown on each project card */
+.portfolio-item-info .portfolio-tech {
+    margin: -12px 0 16px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Modal: tech line and "systems I programmed" list */
+.modal-body .modal-tech {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #212121;
+}
+
+.modal-systems-title {
+    margin-top: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modal-systems {
+    padding-left: 20px;
+}
+
+.modal-systems li {
+    margin-bottom: 10px;
+}
+
 /* Modal */
 .modal {
     z-index: 9999;
