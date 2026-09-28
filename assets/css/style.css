@@ -228,6 +228,18 @@ html, body {
     margin-left: 40px;
 }
 
+/* GitHub / LinkedIn icons at the end of the menu */
+.navbar-nav > li.nav-social > a {
+    font-size: 18px;
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li.nav-social + li.nav-social > a {
+        margin-left: 18px;
+    }
+}
+
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus,
 .navbar-nav > li.active > a,
